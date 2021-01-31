@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Murat_ZeynelCumhur_Recipe</string>
+    <string name="adding_recipe">add recipe</string>
+    <string name="edit_button">edit button</string>
+    <string name="delete_button">delete button</string>
+    <string name="textViewFoodName">Food Name</string>
+    <string name="textViewFoodCalories">Food Calories</string>
+    <string name="textViewInsideMaterials">Inside Materials</string>
+    <string name="textViewHowToMake">How To Make</string>
+    <string name="have_been_tried">Have Been Tried</string>
+    <string name="cancel">Cancel</string>
+    <string name="read">Read</string>
+</resources>

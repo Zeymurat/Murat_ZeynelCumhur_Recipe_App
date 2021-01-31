@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_marginTop="35dp"
+        android:hint="@string/textViewFoodName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextInsideMaterials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:hint="@string/textViewInsideMaterials"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextFoodName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFoodName"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextHowToMake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="15"
+        android:hint="@string/textViewHowToMake"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextInsideMaterials"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInsideMaterials"
+        android:importantForAutofill="no" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTried"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/have_been_tried"
+        app:layout_constraintStart_toStartOf="@+id/editTextHowToMake"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHowToMake" />
+
+    <Button
+        android:id="@+id/buttonAddDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/adding_recipe"
+        app:layout_constraintEnd_toEndOf="@+id/editTextHowToMake"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTried" />
+
+    <Button
+        android:id="@+id/buttonCancelDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/cancel"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAddDialog"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxTried"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTried" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
